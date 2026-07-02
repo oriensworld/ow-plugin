@@ -1,0 +1,8 @@
+{
+  "name": "ow-plugin",
+  "description": "Oriens World plugin — system info and greeting, proving cross-platform plugin compatibility between Claude Code and Claude Desktop",
+  "version": "0.1.0",
+  "author": {
+    "name": "tsengyuwei"
+  }
+}
