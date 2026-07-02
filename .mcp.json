@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "ow-server": {
-      "command": "node",
-      "args": ["./mcp-server/server.mjs"]
+      "command": "npx",
+      "args": ["-y", "@oriensworld/ow-server", "--stdio"]
     }
   }
 }

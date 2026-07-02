@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"[ow-plugin] Session started at $(date -Iseconds)\" >> \"${HOME}/ow-plugin.log\""
+          }
+        ]
+      }
+    ]
+  }
+}
