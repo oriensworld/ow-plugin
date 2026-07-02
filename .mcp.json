@@ -2,7 +2,7 @@
   "mcpServers": {
     "ow-server": {
       "command": "node",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-server/server.mjs"]
+      "args": ["./mcp-server/server.mjs"]
     }
   }
 }
