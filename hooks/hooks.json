@@ -9,6 +9,17 @@
           }
         ]
       }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"[ow-plugin] File modified at $(date -Iseconds)\""
+          }
+        ]
+      }
     ]
   }
 }
