@@ -68,11 +68,13 @@ Execute commands directly and provide concise results.
 
 ```bash
 # Core path calculation logic for worktree detection
+# Note: On Windows (Git Bash), git commands return mixed path formats
+# (C:/... vs /c/...). Always resolve to absolute paths before comparing.
 get_main_repo_path() {
-  local git_common_dir=$(git rev-parse --git-common-dir 2>/dev/null)
-  local current_toplevel=$(git rev-parse --show-toplevel 2>/dev/null)
+  local git_common_dir=$(cd "$(git rev-parse --git-common-dir 2>/dev/null)" && pwd)
+  local current_toplevel=$(cd "$(git rev-parse --show-toplevel 2>/dev/null)" && pwd)
 
-  # Detect if in worktree
+  # Detect if in worktree (compare normalized absolute paths)
   if [[ "$git_common_dir" != "$current_toplevel/.git" ]]; then
     # In worktree, derive main repository path from git-common-dir
     dirname "$git_common_dir"
@@ -84,7 +86,8 @@ get_main_repo_path() {
 
 MAIN_REPO_PATH=$(get_main_repo_path)
 PROJECT_NAME=$(basename "$MAIN_REPO_PATH")
-WORKTREE_BASE="$MAIN_REPO_PATH/../.ow/$PROJECT_NAME"
+# Resolve worktree base to absolute path
+WORKTREE_BASE="$(cd "$MAIN_REPO_PATH/.." && pwd)/.ow/$PROJECT_NAME"
 
 # Always use absolute paths to prevent nesting issues
 ABSOLUTE_WORKTREE_PATH="$WORKTREE_BASE/<path>"
