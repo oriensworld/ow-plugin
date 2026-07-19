@@ -5,8 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo \"[ow-plugin] Session started at $(date -Iseconds)\" >> \"${HOME}/ow-plugin.log\"",
-            "commandWindows": "powershell -NoProfile -Command \"$timestamp = Get-Date -Format o; Add-Content -LiteralPath (Join-Path $env:USERPROFILE 'ow-plugin.log') -Value ('[ow-plugin] Session started at ' + $timestamp)\""
+            "command": "echo \"[ow-plugin] Session started at $(date -Iseconds)\" >> \"${HOME}/ow-plugin.log\""
           }
         ]
       }
@@ -17,8 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo \"[ow-plugin] File modified at $(date -Iseconds)\"",
-            "commandWindows": "powershell -NoProfile -Command \"$timestamp = Get-Date -Format o; Write-Output ('[ow-plugin] File modified at ' + $timestamp)\""
+            "command": "echo \"[ow-plugin] File modified at $(date -Iseconds)\""
           }
         ]
       }
