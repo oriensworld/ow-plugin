@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo \"[ow-plugin] Session started at $(date -Iseconds)\" >> \"${HOME}/ow-plugin.log\""
+            "command": "node -e \"require((process.env.PLUGIN_ROOT || process.env.CLAUDE_PLUGIN_ROOT) + '/hooks/log-event.cjs')\""
           }
         ]
       }
@@ -16,7 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo \"[ow-plugin] File modified at $(date -Iseconds)\""
+            "command": "node -e \"require((process.env.PLUGIN_ROOT || process.env.CLAUDE_PLUGIN_ROOT) + '/hooks/log-event.cjs')\""
           }
         ]
       }
