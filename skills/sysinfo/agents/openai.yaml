@@ -1,0 +1,9 @@
+interface:
+  display_name: "System Information"
+  short_description: "Show machine details through the OW server"
+  default_prompt: "Use $sysinfo to show this machine system information."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "ow-server"
+      description: "Oriens World echo and system information tools"

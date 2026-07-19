@@ -1,0 +1,4 @@
+interface:
+  display_name: "Current Date and Time"
+  short_description: "Return an accurate current timestamp"
+  default_prompt: "Use $get-current-datetime to return the current timestamp."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI UX Designer"
+  short_description: "Create accessible implementation-ready UI specs"
+  default_prompt: "Use $ui-ux-designer to design this interface."

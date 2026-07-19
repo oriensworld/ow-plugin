@@ -1,0 +1,4 @@
+interface:
+  display_name: "Initialization Architect"
+  short_description: "Document repository architecture by module"
+  default_prompt: "Use $init-architect to build adaptive repository documentation."

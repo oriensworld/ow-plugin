@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Planner"
+  short_description: "Break complex work into executable phases"
+  default_prompt: "Use $planner to create a detailed plan for this project."

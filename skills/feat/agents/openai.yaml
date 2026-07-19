@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feature Development"
+  short_description: "Plan and implement a feature safely"
+  default_prompt: "Use $feat to plan or implement this feature request."

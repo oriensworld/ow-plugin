@@ -1,6 +1,6 @@
 ---
 name: init-architect
-description: Adaptive initialization: root-level concise + module-level detailed; phased traversal with coverage reporting
+description: "Adaptive initialization: root-level concise + module-level detailed; phased traversal with coverage reporting"
 tools: Read, Write, Glob, Grep
 color: orange
 ---

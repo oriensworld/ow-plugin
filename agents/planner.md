@@ -1,6 +1,10 @@
 ---
 name: planner
-description: Use this agent when the user presents a complex task or project that needs to be broken down into manageable steps and documented for review. Examples: <example>Context: User wants to implement a new feature for their Tauri application. user: 'I need to add a group chat management feature to our WeChat assistant app, including auto-reply, member management and message statistics' assistant: 'I will use the task breakdown planning agent to analyze this complex feature and generate a detailed implementation plan' <commentary>Since the user is presenting a complex feature request that needs systematic planning, use the task-breakdown-planner agent to create a structured implementation plan.</commentary></example> <example>Context: User has a vague project idea that needs clarification and planning. user: 'I want to optimize our application performance but don\'t know where to start' assistant: 'Let me use the task breakdown planning agent to help you create a systematic performance optimization plan' <commentary>The user has a broad goal that needs to be broken down into specific, actionable steps, so use the task-breakdown-planner agent.</commentary></example>
+description: >-
+  Use this agent when the user presents a complex task or project that needs to
+  be broken down into manageable steps and documented for review. Use it for
+  broad feature requests, vague project goals, performance initiatives, and
+  other work that needs systematic planning before implementation.
 color: green
 
 ---

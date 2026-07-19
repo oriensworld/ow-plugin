@@ -1,0 +1,4 @@
+interface:
+  display_name: "Development Workflow"
+  short_description: "Run a structured six-stage workflow"
+  default_prompt: "Use $workflow to guide this task through the six-stage workflow."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Worktree"
+  short_description: "Create and manage structured worktrees"
+  default_prompt: "Use $git-worktree to create or manage a Git worktree."

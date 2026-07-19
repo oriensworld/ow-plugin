@@ -1,0 +1,9 @@
+interface:
+  display_name: "OW Plugin Diagnostics"
+  short_description: "Check OW MCP tools and plugin connectivity"
+  default_prompt: "Use $diagnostics to verify that the OW plugin works."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "ow-server"
+      description: "Oriens World echo and system information tools"

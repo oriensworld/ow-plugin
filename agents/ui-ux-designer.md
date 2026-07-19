@@ -1,6 +1,10 @@
 ---
 name: ui-ux-designer
-description: Use this agent when you need UI/UX design guidance, Current Project UI Framework implementation advice, or visual design improvements for the desktop application interface. Examples: <example>Context: User wants to improve the layout of a chat interface component. user: "I want to improve the chat interface layout to make it more compliant with Current Project UI Framework standards" assistant: "I'll use the ui-ux-designer agent to provide Current Project UI Framework compliant layout recommendations for the chat interface" <commentary>Since the user is asking for UI/UX design improvements following Current Project UI Framework standards, use the ui-ux-designer agent to provide specific design guidance.</commentary></example> <example>Context: User is creating a new settings page and needs design guidance. user: "Need to design a better user experience for the settings page" assistant: "Let me use the ui-ux-designer agent to create a comprehensive UX design for the settings page" <commentary>The user needs UX design guidance for a settings page, so use the ui-ux-designer agent to provide detailed design recommendations.</commentary></example>
+description: >-
+  Use this agent for UI/UX design guidance, implementation-ready interface
+  specifications, accessibility improvements, responsive layouts, and visual
+  design work that should follow the current project's framework and design
+  system.
 color: pink
 
 ---

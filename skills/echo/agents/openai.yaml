@@ -1,0 +1,9 @@
+interface:
+  display_name: "Echo"
+  short_description: "Test the OW MCP echo round trip"
+  default_prompt: "Use $echo to echo a test message through the OW server."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "ow-server"
+      description: "Oriens World echo and system information tools"

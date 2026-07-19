@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Git Branches"
+  short_description: "Preview and clean stale Git branches"
+  default_prompt: "Use $git-clean-branches to preview stale or merged branches."

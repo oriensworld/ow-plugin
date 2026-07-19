@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Rollback"
+  short_description: "Preview and perform safe Git rollbacks"
+  default_prompt: "Use $git-rollback to preview a safe rollback for this branch."

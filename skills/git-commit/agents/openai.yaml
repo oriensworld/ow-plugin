@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Commit"
+  short_description: "Create a focused conventional Git commit"
+  default_prompt: "Use $git-commit to analyze and commit the current changes."

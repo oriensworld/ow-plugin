@@ -1,0 +1,9 @@
+interface:
+  display_name: "Greeting and System Check"
+  short_description: "Greet users and show OW system details"
+  default_prompt: "Use $greet to greet me and show system information."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "ow-server"
+      description: "Oriens World echo and system information tools"

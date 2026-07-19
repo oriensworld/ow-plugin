@@ -1,0 +1,37 @@
+{
+  "name": "ow-plugin",
+  "version": "0.5.0+codex.20260719154907",
+  "description": "Oriens World tools and workflows for Claude Code, Claude Desktop, and Codex",
+  "author": {
+    "name": "tsengyuwei",
+    "url": "https://github.com/oriensworld"
+  },
+  "homepage": "https://github.com/oriensworld/ow-plugin",
+  "repository": "https://github.com/oriensworld/ow-plugin",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "git",
+    "workflow",
+    "cross-platform"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Oriens World",
+    "shortDescription": "MCP tools and reusable development workflows",
+    "longDescription": "Use Oriens World system tools, Git helpers, planning workflows, repository initialization, and UI design guidance across Claude and Codex.",
+    "developerName": "tsengyuwei",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Run OW plugin diagnostics.",
+      "Show this machine's system information.",
+      "Help me plan and implement a feature."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
